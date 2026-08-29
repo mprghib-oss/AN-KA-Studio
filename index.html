@@ -3,113 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ANHKA Studio — Architecture, Interior & Spatial Design.">
-  <title>ANHKA — Architecture & Design</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="AN-KA Studio — Architecture, interiors, landscape and planning portfolio.">
+  <meta name="theme-color" content="#f7f7f5">
+  <title>AN-KA — Architecture & Interior Design</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="nav">
-    <a class="brand" href="#top">ANHKA<span>—</span></a>
-    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">MENU</button>
-    <nav class="nav-links">
-      <a href="#work">WORK</a>
-      <a href="#studio">STUDIO</a>
-      <a href="#services">SERVICES</a>
-      <a href="#contact">CONTACT</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="AN-KA home">AN-KA</a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a class="active" href="index.html">WORK</a>
+      <a href="about.html">ABOUT</a>
+      <a href="contact.html">CONTACT</a>
     </nav>
+    <button class="search-toggle" type="button" aria-label="Open search">SEARCH <span>⌕</span></button>
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">MENU</button>
   </header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="hero-top">
-        <p>ARCHITECTURE / INTERIOR / SPACE</p>
-        <p>INDONESIA — 2026</p>
-      </div>
-      <div class="hero-title">
-        <h1>ANHKA</h1>
-        <p>Architecture shaped by context,<br>material and everyday life.</p>
-      </div>
-      <a class="scroll" href="#work">SCROLL TO EXPLORE <span>↓</span></a>
-    </section>
+  <div class="mobile-menu" aria-hidden="true">
+    <button class="menu-close" type="button" aria-label="Close menu">CLOSE</button>
+    <nav>
+      <a href="index.html">WORK</a>
+      <a href="about.html">ABOUT</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </div>
 
-    <section id="work" class="section work">
-      <div class="section-head">
-        <span>01</span>
-        <h2>Selected Work</h2>
-        <span>2024—2026</span>
-      </div>
+  <section class="search-panel" aria-hidden="true">
+    <div class="search-inner">
+      <label for="project-search">SEARCH PROJECTS</label>
+      <input id="project-search" type="search" placeholder="Project, location, category or year" autocomplete="off">
+      <button type="button" class="search-close">CLOSE</button>
+    </div>
+  </section>
 
-      <article class="project project-large reveal">
-        <div class="project-image image-01"><span>01</span></div>
-        <div class="project-meta">
-          <div><h3>House No. 01</h3><p>Residential / Surabaya</p></div>
-          <span>2026</span>
-        </div>
-      </article>
-
-      <div class="project-grid">
-        <article class="project reveal">
-          <div class="project-image image-02"><span>02</span></div>
-          <div class="project-meta">
-            <div><h3>Quiet Courtyard</h3><p>Residential / Sidoarjo</p></div><span>2025</span>
-          </div>
-        </article>
-        <article class="project reveal">
-          <div class="project-image image-03"><span>03</span></div>
-          <div class="project-meta">
-            <div><h3>Concrete / Light</h3><p>Interior / Surabaya</p></div><span>2025</span>
-          </div>
-        </article>
-      </div>
-
-      <article class="project project-offset reveal">
-        <div class="project-image image-04"><span>04</span></div>
-        <div class="project-meta">
-          <div><h3>Coastal House</h3><p>Residential / Belitung</p></div>
-          <span>2024</span>
-        </div>
-      </article>
-    </section>
-
-    <section id="studio" class="section studio">
-      <div class="section-head"><span>02</span><h2>The Studio</h2><span>About</span></div>
-      <div class="studio-copy">
-        <p class="statement">We believe architecture does not need to be loud to be meaningful.</p>
-        <div class="studio-text">
-          <p>ANHKA is an independent architecture and design studio working across architecture, interior and spatial design.</p>
-          <p>Our approach begins with understanding place, climate, material and the people who inhabit a space. We pursue clear forms, honest materials and spaces that age with character.</p>
-        </div>
+  <main>
+    <section class="portfolio-intro">
+      <div class="category-filter" aria-label="Project categories">
+        <button class="filter active" data-filter="All">ALL</button>
+        <button class="filter" data-filter="Architecture">ARCHITECTURE</button>
+        <button class="filter" data-filter="Interiors">INTERIORS</button>
+        <button class="filter" data-filter="Landscape">LANDSCAPE</button>
+        <button class="filter" data-filter="Planning">PLANNING</button>
       </div>
     </section>
 
-    <section id="services" class="section services">
-      <div class="section-head"><span>03</span><h2>Services</h2><span>Capabilities</span></div>
-      <div class="service-list">
-        <div><span>01</span><h3>Architecture</h3><p>Concept, planning, design development & documentation.</p></div>
-        <div><span>02</span><h3>Interior</h3><p>Spatial planning, material direction & interior detailing.</p></div>
-        <div><span>03</span><h3>Visualization</h3><p>3D modelling, architectural visualization & presentation.</p></div>
-        <div><span>04</span><h3>Consultation</h3><p>Early-stage ideas, site response & design direction.</p></div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact">
-      <div class="section-head"><span>04</span><h2>Contact</h2><span>Start a project</span></div>
-      <div class="contact-content">
-        <p>Have a space, idea or unfinished thought?</p>
-        <a href="mailto:hello@anhka.studio" class="email">hello@anhka.studio <span>↗</span></a>
-      </div>
-    </section>
+    <section id="project-list" class="project-list" aria-label="Projects"></section>
   </main>
 
-  <footer>
-    <span>© 2026 ANHKA STUDIO</span>
-    <span>ARCHITECTURE / DESIGN</span>
-    <a href="#top">BACK TO TOP ↑</a>
+  <footer class="site-footer">
+    <div>
+      <strong>AN-KA STUDIO</strong>
+      <span>© 2026 ALL RIGHTS RESERVED</span>
+    </div>
+    <span>INDONESIA</span>
+    <div class="footer-links">
+      <a href="#" aria-label="Instagram">INSTAGRAM</a>
+      <a href="#" aria-label="LinkedIn">LINKEDIN</a>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
