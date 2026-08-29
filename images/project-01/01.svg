@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650">
+<rect width="1000" height="650" fill="#ebe9e3"/>
+<rect y="560" width="1000" height="90" fill="#d0ccc1"/>
+<rect x="100" y="240" width="800" height="320" fill="#aaa69c"/><rect x="170" y="180" width="250" height="380" fill="#d2cec4"/><rect x="470" y="260" width="360" height="300" fill="#77736a"/><rect x="535" y="320" width="110" height="170" fill="#c9c5bb"/><rect x="675" y="320" width="100" height="170" fill="#c9c5bb"/>
+<line x1="0" y1="560" x2="1000" y2="560" stroke="#77736a" stroke-width="2"/>
+<text x="55" y="75" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="3" fill="#111">01 / 01</text>
+<text x="55" y="112" font-family="Arial, Helvetica, sans-serif" font-size="24" letter-spacing="1" fill="#111">NOTARY OFFICE</text>
+<text x="55" y="140" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="2" fill="#666">SIDOARJO · INTERIORS · 2026</text>
+</svg>
