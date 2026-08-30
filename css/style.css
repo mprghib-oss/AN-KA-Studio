@@ -22,17 +22,17 @@ button, input { font: inherit; }
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: 135px;
-  height: 44px;
+  width: 250px;
+  height: 60px;
   overflow: hidden;
 }
 
 .brand img {
   display: block;
-  width: 135px !important;
+  width: 250px !important;
   height: auto !important;
-  max-width: 135px !important;
-  max-height: 40px !important;
+  max-width: 250px !important;
+  max-height: 55px !important;
   object-fit: contain;
   object-position: left center;
 }
