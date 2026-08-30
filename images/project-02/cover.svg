@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650">
-<rect width="1000" height="650" fill="#ebe9e3"/>
-<rect y="560" width="1000" height="90" fill="#d0ccc1"/>
-<rect x="100" y="300" width="800" height="260" fill="#b7b2a7"/><polygon points="100,300 500,100 900,300" fill="#77736a"/><rect x="235" y="330" width="530" height="230" fill="#dad7cf"/><rect x="305" y="365" width="120" height="195" fill="#8b887f"/><rect x="575" y="365" width="120" height="195" fill="#8b887f"/>
-<line x1="0" y1="560" x2="1000" y2="560" stroke="#77736a" stroke-width="2"/>
-<text x="55" y="75" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="3" fill="#111">02</text>
-<text x="55" y="112" font-family="Arial, Helvetica, sans-serif" font-size="24" letter-spacing="1" fill="#111">COFFEE HOUSE</text>
-<text x="55" y="140" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="2" fill="#666">SURABAYA · ARCHITECTURE · 2025</text>
-</svg>
