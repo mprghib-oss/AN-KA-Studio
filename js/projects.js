@@ -25,11 +25,11 @@ const projects = [
   },
   {
     id: "project-04", number: "04", title: "Office Interior",
-    location: "Surabaya, Indonesia", category: "Interiors", year: "2024",
-    client: "Private Client", status: "Completed", area: "—",
+    location: "Surabaya, Indonesia", category: "Interiors", year: "2025",
+    client: "Private Client", status: "Design Completed", area: "—",
     description: "An understated office interior with a neutral material palette, integrated storage and carefully framed views through the workspace.",
-    cover: "images/project-04/cover.svg",
-    gallery: ["images/project-04/01.svg","images/project-04/02.svg"]
+    cover: "images/project-04/cover.jpg",
+    gallery: ["images/project-04/01.jpg","images/project-04/02.jpg","images/project-04/03.jpg"]
   },
   {
     id: "project-05", number: "05", title: "Public Space",
