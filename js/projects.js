@@ -5,7 +5,7 @@ const projects = [
     client: "Private Client", status: "Completed", area: "—",
     description: "A single-story modern home defined by a prominent slatted canopy and an open glass facade. The design explores simple geometric massing to optimize natural light and everyday tropical living.",
     cover: "images/project-01/cover.jpg",
-    gallery: ["images/project-01/01.jpg","images/project-01/02.jpg","images/project-01/03.jpg"]
+    gallery: ["images/project-01/01.jpg","images/project-01/02.jpg","images/project-01/03.jpg","images/project-01/04.jpg","images/project-01/05.jpg","images/project-01/06.jpg"]
   },
   {
     id: "project-02", number: "02", title: "Coffee House",
