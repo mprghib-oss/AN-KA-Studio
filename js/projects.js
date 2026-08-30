@@ -3,7 +3,7 @@ const projects = [
     id: "project-01", number: "01", title: "MONO House",
     location: "Sidoarjo, Indonesia", category: "Hunian", year: "2026",
     client: "Private Client", status: "Completed", area: "—",
-    description: "A restrained notary office interior designed around a calm reception sequence, integrated storage and warm material contrasts. The composition balances professional character with a welcoming atmosphere.",
+    description: "A single-story modern home defined by a prominent slatted canopy and an open glass facade. The design explores simple geometric massing to optimize natural light and everyday tropical living.",
     cover: "images/project-01/cover.jpg",
     gallery: ["images/project-01/01.jpg","images/project-01/02.jpg","images/project-01/03.jpg"]
   },
