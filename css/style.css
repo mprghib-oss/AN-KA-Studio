@@ -18,7 +18,7 @@ button, input { font: inherit; }
   backdrop-filter: blur(8px); border-bottom: 1px solid transparent; transition: border-color .3s ease;
 }
 .site-header:has(+ *) { }
-..brand {
+.brand {
   display: flex;
   align-items: center;
 }
