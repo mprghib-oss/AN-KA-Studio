@@ -1,7 +1,7 @@
 const projects = [
   {
     id: "project-01", number: "01", title: "MONO House",
-    location: "Sidoarjo, Indonesia", category: "Hunian", year: "2026",
+    location: "Sidoarjo, Indonesia", category: "Architecture", year: "2026",
     client: "Private Client", status: "on-going", area: "—",
     description: "A single-story modern home defined by a prominent slatted canopy and an open glass facade. The design explores simple geometric massing to optimize natural light and everyday tropical living.",
     cover: "images/project-01/cover.jpg",
