@@ -18,7 +18,16 @@ button, input { font: inherit; }
   backdrop-filter: blur(8px); border-bottom: 1px solid transparent; transition: border-color .3s ease;
 }
 .site-header:has(+ *) { }
-.brand { font-size: 25px; letter-spacing: .16em; font-weight: 500; }
+..brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand img {
+  display: block;
+  width: 100px;
+  height: auto;
+}
 .desktop-nav { display: flex; gap: clamp(24px, 4vw, 60px); }
 .desktop-nav a, .search-toggle, .menu-toggle { font-size: 11px; letter-spacing: .12em; }
 .desktop-nav a.active { border-bottom: 1px solid var(--text); padding-bottom: 5px; }
