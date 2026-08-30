@@ -1,7 +1,7 @@
 const projects = [
   {
-    id: "project-01", number: "01", title: "Notary Office",
-    location: "Sidoarjo, Indonesia", category: "Interiors", year: "2026",
+    id: "project-01", number: "01", title: "MONO House",
+    location: "Sidoarjo, Indonesia", category: "Hunian", year: "2026",
     client: "Private Client", status: "Completed", area: "—",
     description: "A restrained notary office interior designed around a calm reception sequence, integrated storage and warm material contrasts. The composition balances professional character with a welcoming atmosphere.",
     cover: "images/project-01/cover.jpg",
