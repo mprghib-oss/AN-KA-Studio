@@ -2,18 +2,18 @@ const projects = [
   {
     id: "project-01", number: "01", title: "MONO House",
     location: "Sidoarjo, Indonesia", category: "Hunian", year: "2026",
-    client: "Private Client", status: "Completed", area: "—",
+    client: "Private Client", status: "on-going", area: "—",
     description: "A single-story modern home defined by a prominent slatted canopy and an open glass facade. The design explores simple geometric massing to optimize natural light and everyday tropical living.",
     cover: "images/project-01/cover.jpg",
     gallery: ["images/project-01/01.jpg","images/project-01/02.jpg","images/project-01/03.jpg","images/project-01/04.jpg","images/project-01/05.jpg","images/project-01/06.jpg"]
   },
   {
-    id: "project-02", number: "02", title: "Coffee House",
-    location: "Surabaya, Indonesia", category: "Architecture", year: "2025",
-    client: "Private Client", status: "Completed", area: "—",
-    description: "A compact hospitality project organized around a strong roof silhouette, framed views and a shaded transition between garden and interior.",
-    cover: "images/project-02/cover.svg",
-    gallery: ["images/project-02/01.svg","images/project-02/02.svg"]
+    id: "project-02", number: "02", title: "Rds House",
+    location: "Sidoarjo, Indonesia", category: "Architecture", year: "2025",
+    client: "Private Client", status: "Design Completed", area: "—",
+    description: "A refined micro-housing concept designed to maximize light, privacy, and functionality on a restricted footprint.",
+    cover: "images/project-02/cover.jpg",
+    gallery: ["images/project-02/01.jpg","images/project-02/02.jpg","images/project-02/03.jpg","images/project-02/04.jpg"]
   },
   {
     id: "project-03", number: "03", title: "Private Residence",
