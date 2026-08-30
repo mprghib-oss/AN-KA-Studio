@@ -92,7 +92,13 @@ button, input { font: inherit; }
 .subpage-main { padding: 80px var(--pad) 140px; min-height: calc(100vh - 180px); }
 .eyebrow { font-size: 10px; letter-spacing: .14em; color: var(--muted); }
 .about-layout, .contact-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 10vw; margin-top: 100px; }
-.about-layout h1, .contact-layout h1 { font-size: clamp(48px, 8vw, 130px); font-weight: 300; letter-spacing: -.055em; line-height: .9; margin: 0; }
+.about-layout h1 {
+  font-size: 50px;
+  font-weight: 300;
+  letter-spacing: -.055em;
+  line-height: .9;
+  margin: 0;
+}
 .about-copy, .contact-copy { max-width: 560px; padding-top: 12px; }
 .lead { font-size: clamp(20px, 2.2vw, 34px); line-height: 1.15; letter-spacing: -.025em; margin: 0 0 55px; }
 .about-copy > p:not(.lead) { color: var(--muted); max-width: 470px; font-size: 14px; line-height: 1.7; }
