@@ -4,8 +4,8 @@ const projects = [
     location: "Sidoarjo, Indonesia", category: "Interiors", year: "2026",
     client: "Private Client", status: "Completed", area: "—",
     description: "A restrained notary office interior designed around a calm reception sequence, integrated storage and warm material contrasts. The composition balances professional character with a welcoming atmosphere.",
-    cover: "images/project-01/cover.svg",
-    gallery: ["images/project-01/01.svg","images/project-01/02.svg","images/project-01/03.svg"]
+    cover: "images/project-01/cover.jpg",
+    gallery: ["images/project-01/01.jpg","images/project-01/02.jpg","images/project-01/03.jpg"]
   },
   {
     id: "project-02", number: "02", title: "Coffee House",
