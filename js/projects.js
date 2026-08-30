@@ -20,8 +20,8 @@ const projects = [
     location: "Sidoarjo, Indonesia", category: "Architecture", year: "2025",
     client: "Private Client", status: "Design", area: "—",
     description: "A contemporary residence composed from solid volumes, deep openings and controlled landscape edges, creating privacy while maintaining natural light.",
-    cover: "images/project-03/cover.svg",
-    gallery: ["images/project-03/01.svg","images/project-03/02.svg"]
+    cover: "images/project-03/cover.jpg",
+    gallery: ["images/project-03/01.jpg","images/project-03/02.jpg","images/project-03/03.jpg","images/project-03/04.jpg"]
   },
   {
     id: "project-04", number: "04", title: "Office Interior",
