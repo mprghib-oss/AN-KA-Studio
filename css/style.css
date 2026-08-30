@@ -21,12 +21,18 @@ button, input { font: inherit; }
 .brand {
   display: flex;
   align-items: center;
+  width: max-content;
+  height: 100%;
+  text-decoration: none;
 }
 
 .brand img {
   display: block;
-  width: 100px;
-  height: auto;
+  width: 90px !important;
+  max-width: 90px !important;
+  height: auto !important;
+  max-height: 32px !important;
+  object-fit: contain;
 }
 .desktop-nav { display: flex; gap: clamp(24px, 4vw, 60px); }
 .desktop-nav a, .search-toggle, .menu-toggle { font-size: 11px; letter-spacing: .12em; }
