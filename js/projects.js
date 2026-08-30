@@ -16,10 +16,10 @@ const projects = [
     gallery: ["images/project-02/01.jpg","images/project-02/02.jpg","images/project-02/03.jpg","images/project-02/04.jpg"]
   },
   {
-    id: "project-03", number: "03", title: "Private Residence",
-    location: "Sidoarjo, Indonesia", category: "Architecture", year: "2025",
-    client: "Private Client", status: "Design", area: "—",
-    description: "A contemporary residence composed from solid volumes, deep openings and controlled landscape edges, creating privacy while maintaining natural light.",
+    id: "project-03", number: "03", title: "A House",
+    location: "Mojokerto, Indonesia", category: "Architecture", year: "2025",
+    client: "Private Client", status: "Design Completed", area: "—",
+    description: "A modern tropical home shaped by material screens, controlled openings, and integrated shading for optimized daylighting and privacy.",
     cover: "images/project-03/cover.jpg",
     gallery: ["images/project-03/01.jpg","images/project-03/02.jpg","images/project-03/03.jpg","images/project-03/04.jpg"]
   },
