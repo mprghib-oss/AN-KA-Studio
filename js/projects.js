@@ -24,7 +24,7 @@ const projects = [
     gallery: ["images/project-03/01.jpg","images/project-03/02.jpg","images/project-03/03.jpg","images/project-03/04.jpg"]
   },
   {
-    id: "project-04", number: "04", title: "Office Interior",
+    id: "project-04", number: "04", title: "Privat Office Interior",
     location: "Surabaya, Indonesia", category: "Interiors", year: "2025",
     client: "Private Client", status: "Design Completed", area: "—",
     description: "An understated office interior with a neutral wood material palette, integrated storage and carefully framed views through the workspace.",
@@ -32,7 +32,7 @@ const projects = [
     gallery: ["images/project-04/01.jpg","images/project-04/02.jpg","images/project-04/03.jpg"]
   },
   {
-    id: "project-05", number: "05", title: "Public Space",
+    id: "project-05", number: "05", title: "Office Interior",
     location: "Indonesia", category: "Interiors", year: "2026",
     client: "—", status: "Concept", area: "—",
     description: "design concept for a Notary office embodies modern minimalism, emphasizing clean lines, functional zones, and a sophisticated material palette.",
