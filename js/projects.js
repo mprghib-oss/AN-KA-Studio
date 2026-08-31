@@ -40,7 +40,7 @@ const projects = [
     gallery: ["images/project-05/01.jpg","images/project-05/02.jpg","images/project-05/03.jpg","images/project-05/04.jpg","images/project-05/05.jpg","images/project-05/06.jpg","images/project-05/07.jpg"]
   },
   {
-    id: "project-06", number: "06", title: "Cafe Mntr", 
+    id: "project-06", number: "06", title: "Cafe Sokoo", 
     location: "Mojokerto", category: "Planning", year: "2026",
     client: "—", status: "Concept", area: "—",
     description: "a Tropical minimalist commercial, combines finish concrete material with warm interior elements to create an inviting coffee shop/café experience.",
