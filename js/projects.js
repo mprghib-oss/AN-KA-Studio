@@ -40,11 +40,19 @@ const projects = [
     gallery: ["images/project-05/01.jpg","images/project-05/02.jpg","images/project-05/03.jpg","images/project-05/04.jpg","images/project-05/05.jpg","images/project-05/06.jpg","images/project-05/07.jpg"]
   },
   {
-    id: "project-06", number: "06", title: "Masterplan", 
+    id: "project-06", number: "06", title: "Cafe Sokoo", 
+    location: "Mojokerto", category: "Planning", year: "2026",
+    client: "—", status: "Concept", area: "—",
+    description: "a Tropical minimalist commercial, combines finish concrete material with warm interior elements to create an inviting coffee shop/café experience.",
+    cover: "images/project-06/cover.jpg",
+    gallery: ["images/project-06/01.jpg","images/project-06/02.jpg","images/project-06/03.jpg","images/project-06/04.jpg"]
+  },
+  {
+    id: "project-07", number: "07", title: "Masterplan", 
     location: "Indonesia", category: "Planning", year: "2024",
     client: "—", status: "Concept", area: "—",
     description: "A masterplanning study connecting residential, landscape and public programs through a legible network of streets, green corridors and water edges.",
-    cover: "images/project-06/cover.svg",
-    gallery: ["images/project-06/01.svg","images/project-06/02.svg"]
+    cover: "images/project-07/cover.svg",
+    gallery: ["images/project-07/01.svg","images/project-07/02.svg"]
   }
 ];
