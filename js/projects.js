@@ -33,11 +33,11 @@ const projects = [
   },
   {
     id: "project-05", number: "05", title: "Public Space",
-    location: "Indonesia", category: "Landscape", year: "2024",
+    location: "Indonesia", category: "Interiors", year: "2026",
     client: "—", status: "Concept", area: "—",
-    description: "A public landscape concept organized through trees, terraces and quiet gathering spaces, designed as a sequence of shaded outdoor rooms.",
-    cover: "images/project-05/cover.svg",
-    gallery: ["images/project-05/01.svg","images/project-05/02.svg"]
+    description: "design concept for a Notary office embodies modern minimalism, emphasizing clean lines, functional zones, and a sophisticated material palette.",
+    cover: "images/project-05/cover.jpg",
+    gallery: ["images/project-05/01.jpg","images/project-05/02.jpg","images/project-05/03.jpg","images/project-05/04.jpg","images/project-05/05.jpg","images/project-05/06.jpg","images/project-05/07.jpg"]
   },
   {
     id: "project-06", number: "06", title: "Masterplan", 
