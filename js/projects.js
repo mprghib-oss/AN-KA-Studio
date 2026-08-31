@@ -41,7 +41,7 @@ const projects = [
   },
   {
     id: "project-06", number: "06", title: "Cafe Sokoo", 
-    location: "Mojokerto", category: "Planning", year: "2026",
+    location: "Mojokerto", category: "Architecture", year: "2026",
     client: "—", status: "Concept", area: "—",
     description: "a Tropical minimalist commercial, combines finish concrete material with warm interior elements to create an inviting coffee shop/café experience.",
     cover: "images/project-06/cover.jpg",
