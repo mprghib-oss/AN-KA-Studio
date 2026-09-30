@@ -106,6 +106,7 @@ function initProjectDetail() {
   const previous = projects[(current - 1 + projects.length) % projects.length];
   const next = projects[(current + 1) % projects.length];
   const detail = document.getElementById("project-detail");
+
   detail.innerHTML = `
     <section class="project-hero">
       <div class="project-detail-meta">
@@ -129,11 +130,50 @@ function initProjectDetail() {
         <div><span>LOCATION</span><strong>${p.location}</strong></div>
       </div>
     </section>
-    <section class="detail-gallery">
-      ${p.gallery.map((src, i) => `<img src="${src}" alt="${p.title} project image ${i+1}" loading="lazy" class="${i % 3 === 0 ? "gallery-wide" : ""}">`).join("")}
-    </section>
+    <section class="detail-gallery" id="detail-gallery"></section>
     <nav class="project-nextprev">
       <a href="project.html?id=${previous.id}"><span>← PREVIOUS</span><strong>${previous.title}</strong></a>
       <a class="next" href="project.html?id=${next.id}"><span>NEXT →</span><strong>${next.title}</strong></a>
     </nav>`;
+
+  loadProjectGallery(p);
+}
+
+async function loadProjectGallery(project) {
+  const gallery = document.getElementById("detail-gallery");
+  if (!gallery) return;
+
+  const extensions = ["jpg", "jpeg", "png", "webp", "svg"];
+  const slots = Array.from({length: 12}, (_, i) => String(i + 1).padStart(2, "0"));
+
+  const findImage = (slot) => new Promise(resolve => {
+    let index = 0;
+
+    const tryNext = () => {
+      if (index >= extensions.length) {
+        resolve(null);
+        return;
+      }
+
+      const src = `images/${project.id}/${slot}.${extensions[index++]}`;
+      const img = new Image();
+
+      img.onload = () => resolve(src);
+      img.onerror = tryNext;
+      img.src = src;
+    };
+
+    tryNext();
+  });
+
+  const images = await Promise.all(slots.map(findImage));
+
+  images.filter(Boolean).forEach((src, index) => {
+    const img = document.createElement("img");
+    img.src = src;
+    img.alt = `${project.title} project image ${index + 1}`;
+    img.loading = "lazy";
+    if (index % 3 === 0) img.classList.add("gallery-wide");
+    gallery.appendChild(img);
+  });
 }
