@@ -52,7 +52,8 @@ const projects = [
     location: "Indonesia", category: "Planning", year: "2024",
     client: "—", status: "Concept", area: "—",
     description: "A masterplanning study connecting residential, landscape and public programs through a legible network of streets, green corridors and water edges.",
-    cover: "images/project-07/cover.svg",
-    gallery: ["images/project-07/01.svg","images/project-07/02.svg"]
+    cover: "images/project-07/cover.jpg",
+    gallery: ["images/project-07/01.jpg","images/project-07/02.jpg
+              "]
   }
 ];
