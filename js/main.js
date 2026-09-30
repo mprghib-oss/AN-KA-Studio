@@ -143,37 +143,29 @@ async function loadProjectGallery(project) {
   const gallery = document.getElementById("detail-gallery");
   if (!gallery) return;
 
-  const extensions = ["jpg", "jpeg", "png", "webp", "svg"];
+  const extensions = ["jpg", "jpeg", "png", "webp"];
   const slots = Array.from({length: 12}, (_, i) => String(i + 1).padStart(2, "0"));
 
-  const findImage = (slot) => new Promise(resolve => {
-    let index = 0;
+  slots.forEach(slot => {
+    let extensionIndex = 0;
 
     const tryNext = () => {
-      if (index >= extensions.length) {
-        resolve(null);
-        return;
-      }
+      if (extensionIndex >= extensions.length) return;
 
-      const src = `images/${project.id}/${slot}.${extensions[index++]}`;
+      const src = `images/${project.id}/${slot}.${extensions[extensionIndex++]}`;
       const img = new Image();
 
-      img.onload = () => resolve(src);
+      img.onload = () => {
+        img.alt = `${project.title} project image ${slot}`;
+        img.loading = "lazy";
+        if (gallery.children.length % 3 === 0) img.classList.add("gallery-wide");
+        gallery.appendChild(img);
+      };
+
       img.onerror = tryNext;
       img.src = src;
     };
 
     tryNext();
-  });
-
-  const images = await Promise.all(slots.map(findImage));
-
-  images.filter(Boolean).forEach((src, index) => {
-    const img = document.createElement("img");
-    img.src = src;
-    img.alt = `${project.title} project image ${index + 1}`;
-    img.loading = "lazy";
-    if (index % 3 === 0) img.classList.add("gallery-wide");
-    gallery.appendChild(img);
   });
 }
