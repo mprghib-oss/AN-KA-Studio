@@ -139,33 +139,41 @@ function initProjectDetail() {
   loadProjectGallery(p);
 }
 
-async function loadProjectGallery(project) {
+function loadProjectGallery(project) {
   const gallery = document.getElementById("detail-gallery");
   if (!gallery) return;
 
+  // Existing gallery list is the reliable fallback.
+  // Automatic slots 01–12 are then added only when they are not already listed.
+  const existing = Array.isArray(project.gallery) ? [...project.gallery] : [];
+  const existingSet = new Set(existing);
   const extensions = ["jpg", "jpeg", "png", "webp"];
-  const slots = Array.from({length: 12}, (_, i) => String(i + 1).padStart(2, "0"));
 
-  slots.forEach(slot => {
-    let extensionIndex = 0;
-
-    const tryNext = () => {
-      if (extensionIndex >= extensions.length) return;
-
-      const src = `images/${project.id}/${slot}.${extensions[extensionIndex++]}`;
-      const img = new Image();
-
-      img.onload = () => {
-        img.alt = `${project.title} project image ${slot}`;
-        img.loading = "lazy";
-        if (gallery.children.length % 3 === 0) img.classList.add("gallery-wide");
-        gallery.appendChild(img);
-      };
-
-      img.onerror = tryNext;
-      img.src = src;
-    };
-
-    tryNext();
+  existing.forEach((src, index) => {
+    appendGalleryImage(gallery, src, project.title, index + 1);
   });
+
+  for (let i = 1; i <= 12; i++) {
+    const slot = String(i).padStart(2, "0");
+
+    extensions.forEach(ext => {
+      const src = `images/${project.id}/${slot}.${ext}`;
+      if (existingSet.has(src)) return;
+
+      const img = new Image();
+      img.onload = () => {
+        appendGalleryImage(gallery, src, project.title, gallery.children.length + 1);
+      };
+      img.src = src;
+    });
+  }
+}
+
+function appendGalleryImage(gallery, src, title, number) {
+  const img = document.createElement("img");
+  img.src = src;
+  img.alt = `${title} project image ${number}`;
+  img.loading = "lazy";
+  if (gallery.children.length % 3 === 0) img.classList.add("gallery-wide");
+  gallery.appendChild(img);
 }
