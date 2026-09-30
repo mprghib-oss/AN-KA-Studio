@@ -53,7 +53,6 @@ const projects = [
     client: "—", status: "Concept", area: "—",
     description: "A masterplanning study connecting residential, landscape and public programs through a legible network of streets, green corridors and water edges.",
     cover: "images/project-07/cover.jpg",
-    gallery: ["images/project-07/01.jpg","images/project-07/02.jpg
-              "]
+    gallery: ["images/project-07/01.jpg","images/project-07/02.jpg"]
   }
 ];
